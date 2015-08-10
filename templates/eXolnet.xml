@@ -205,4 +205,19 @@
       <option name="PHP Comment" value="true" />
     </context>
   </template>
+  <template name="gsi" value="public function get$NAME$();&#10;&#10;public function set$NAME$($TYPE$$$$LC_NAME_CAMEL$);" description="Getter/Setter for interface" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="LC_NAME_CAMEL" expression="decapitalize(NAME)" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="pubf;" value="public function $NAME$($PARAMETERS$);" description="Public interface" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAMETERS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
 </templateSet>

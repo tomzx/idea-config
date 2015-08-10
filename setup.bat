@@ -1,3 +1,8 @@
+setlocal enabledelayedexpansion
+
 set BASE=%cd%
-mklink %USERPROFILE%\.WebIde80\config\codestyles\eXolnet.xml %BASE%\codestyles\eXolnet.xml
-mklink %USERPROFILE%\.WebIde80\config\templates\eXolnet.xml %BASE%\templates\eXolnet.xml
+for %%i in (7 8 9) do (
+	set TARGET=%USERPROFILE%\.WebIde%%i0\config
+	mklink !TARGET!\codestyles\eXolnet.xml %BASE%\codestyles\eXolnet.xml
+	mklink !TARGET!\templates\eXolnet.xml %BASE%\templates\eXolnet.xml
+)

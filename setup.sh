@@ -10,7 +10,7 @@ do
 	ln -s $BASE/templates/eXolnet.xml $TARGET/templates/eXolnet.xml
 done
 
-for i in 2016.1 2016.2
+for i in 2016.1 2016.2 2016.3
 do
 	TARGET=$HOME/Library/Preferences/PhpStorm${i}
 	mkdir -p $TARGET/codestyles $TARGET/templates

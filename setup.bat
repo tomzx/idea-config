@@ -18,7 +18,7 @@ for %%i in (7 8 9 10) do (
 	)
 )
 
-for %%s in (2016.1 2016.2 2016.3) do (
+for %%s in (2016.1 2016.2 2016.3 2017.1) do (
 	set TARGET=%USERPROFILE%\.PhpStorm%%s\config
 	IF EXIST !TARGET! (
 		call :createSymlink

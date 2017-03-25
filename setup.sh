@@ -15,7 +15,7 @@ do
 	createSymlink
 done
 
-for i in 2016.1 2016.2 2016.3
+for i in 2016.1 2016.2 2016.3 2017.1
 do
 	TARGET=$HOME/Library/Preferences/PhpStorm${i}
 	createSymlink
